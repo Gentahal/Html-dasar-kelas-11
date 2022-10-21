@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .translate{
+            width: 400px;
+            height: 200px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            background-color: #08c;
+            cursor: pointer;
+            transition: 3s;
+        }
+        .translate:hover{
+            transform: translate(50px, 100px);
+            background: red;
+        }
+
+        .translateY{
+            width: 400px;
+            height: 200px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            background-color: #08c;
+            cursor: pointer;
+            transition: 3s;
+        }
+
+        .translateY:hover{
+            transform: translateX(-100px);
+            background: #08c;
+        }
+        .rotate{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 200px;
+            background: #08c;
+            transition: 1s;
+        }
+        .rotate:hover{
+            transform: rotate(30deg);
+            background: #08c;
+        }
+        .scale{
+            width: 400px;
+            height: 200px;
+            background: #08c;
+            transition: 2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .scale:hover{
+            transform: scale(0,2);
+        }
+    </style>
+    
+</head>
+<body>
+    <!---
+    Transform ada 2
+    1. 2d
+    -Translate
+    -Rotate
+    -Scale
+    -Skew
+    -matriks-->
+    
+
+    <div class="container">
+        <div class="translate">translate</div>
+        <div class="translateY">translateY</div>
+    </div>
+
+    <div class="container">
+        <div class="rotate">Rotate</div>
+    </div>
+
+    <div class="container">
+        <div class="scale">Scale</div>
+    </div>
+
+    <a href="#" class="btn-login"></a>
+    <a href="#" id="btn-login"></a>
+</body>
+</html>
