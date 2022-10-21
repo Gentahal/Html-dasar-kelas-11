@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            background-color: #08c;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item {
+            width: 200px;
+            height: 50px;
+            background: #f9f9f9;
+            margin: 10px;
+        }
+
+        .wrap {
+            width: 80%;
+            height: 500px;
+            background: #f9f9f9;
+            display: flex;
+            margin: 10px;
+            flex-wrap: wrap;
+        }
+
+        .block {
+            width: 400px;
+            height: 100px;
+            background: #7e7e7e;
+            margin: 10px;
+        }
+
+        .area {
+            width: 80%;
+            height: 200px;
+            margin: 10px;
+            border: 1px #7e7e7e solid;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .brand {
+            width: 300px;
+            height: 100%;
+            background: red;
+        }
+
+        .search {
+            width: 300px;
+            height: 100%;
+            background: yellow;
+        }
+
+        .login {
+            width: 300px;
+            height: 100%;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+
+    </div>
+
+    <!--
+        Flec Direction :
+        1. Row (default) : Item akan tampil horizontal kiri ke kanan
+        2. Row-Reverse : Item akan tampil horizontal kanan ke kiri
+        3. Column : Item akan tampil horinzontal atas ke bawah
+        4. Column-Reverse : Item akan tampil vertikal dari bawah ke atas
+    -->
+
+    <!---Wrapping-->
+    <div class="container">
+        <div class="wrap">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+
+    <!-- Alignment -->
+    <!-- 
+        1. Justify Content (horizontal)
+        2. Align Items (Vertikal)
+        3. justify = start default semua element mulai dari kiri
+
+     -->
+    <div class="container">
+        <div class="area">
+            <div class="brand"></div>
+            <div class="search"></div>
+            <div class="login"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
